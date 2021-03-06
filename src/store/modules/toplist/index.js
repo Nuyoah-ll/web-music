@@ -28,7 +28,6 @@ const topListModule = {
           })
           ids = ids.substring(0, ids.length - 1);
           getSongDetailById(ids).then(res1 => {
-            console.log(res1)
             res.playlist.tracks = res1.songs;
           })
           context.commit(types.GET_TOPLIST_DETAIL_BY_ID, { id, list: res.playlist });

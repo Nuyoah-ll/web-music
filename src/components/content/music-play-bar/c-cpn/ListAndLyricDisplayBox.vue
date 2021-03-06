@@ -71,7 +71,6 @@ export default {
   },
   mounted() {
     this.$bus.$on("change-lyric-position", () => {
-      console.log("??????")
       // 改变歌词的位置
       const activeSpan = document.querySelector(".activeSpan");
       this.$refs.lyricRef.scrollTop = activeSpan ? activeSpan.offsetTop - 150 : 0;

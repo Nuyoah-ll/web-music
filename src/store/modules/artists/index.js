@@ -30,7 +30,6 @@ const artistsModule = {
           isLoaded = true;
         }
       });
-      console.log(isLoaded, payload)
       if (isLoaded) {
         context.state.artistsRankingList[index].rankingList.forEach(item => {
           if (item.initial === payload.initial) {
@@ -68,7 +67,6 @@ const artistsModule = {
   getters: {
     getArtistsRankingListByIdAndInitial(state) {
       return (id, initial) => {
-        console.log(initial,"欺负我")
         let list = state.artistsRankingList.filter(item => {
           return item.id === id;
         });

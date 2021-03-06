@@ -26,7 +26,6 @@ const djRadioModule = {
       })
     },
     [types.GET_HOT_DJ_RADIO_ACTION](context, payload) {
-      console.log("触发了几次", payload)
       let index, currentIdIsLoaded, currentPageIsLoaded;
       currentIdIsLoaded = context.state.hotDjRadio.some((item, indez) => {
         if (item.id === payload.id) {

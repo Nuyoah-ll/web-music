@@ -155,7 +155,6 @@ export default {
     },
     changePage(page) {
       this.currentPage = page;
-      console.log(this.currentPage);
       this.$store.dispatch(types.GET_NEW_COMMENT_BY_ID_AND_PAGE_ACTION, {
         page: this.currentPage,
         id: this.$route.query.id,
@@ -174,8 +173,6 @@ export default {
     },
   },
   activated() {
-    console.log("这个被触发了");
-    console.log(this.$route.query.id)
     this.$store.dispatch(types.GET_DISPLAY_MUSIC_ACTIONS, {
       id: this.$route.query.id,
       page: 1,

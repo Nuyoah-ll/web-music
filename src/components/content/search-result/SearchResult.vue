@@ -90,7 +90,6 @@ export default {
   },
   watch: {
     keywords(newV, oldV) {
-      console.log(newV)
       if (newV === "") return this.result = {};
       getSearchSuggestion(newV).then((res) => {
         this.result = res.result ? res.result : {};

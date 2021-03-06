@@ -85,17 +85,14 @@ export default {
   },
   methods: {
     toArea(area) {
-      console.log(area);
       const page = this.$route.query.page;
       if (!!page) {
         this.$router.push(`/discovery/album?area=${area}&page=${page}`);
       } else {
-        console.log("????????????");
         this.$router.push(`/discovery/album?area=${area}`);
       }
     },
     changePage(page) {
-      console.log(page,"woh")
       this.currentPage = page;
       this.$store.dispatch(types.GET_ALBUM_BY_AREA_AND_PAGE_ACTION, {
         area: this.currentArea,

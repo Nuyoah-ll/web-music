@@ -41,14 +41,12 @@ const musicModule = {
       })
     },
     [types.GET_NEW_COMMENT_BY_ID_AND_PAGE_ACTION](context, payload) {
-      console.log(payload)
       const temp = context.state.loadedMusic.filter(item => {
         return item.id + '' === payload.id
       });
       let isLoaded = temp[0].comment.comments.some(item => {
         return item.page === payload.page;
       })
-      console.log(isLoaded)
       if (isLoaded) return;
       getSongRecommend(payload.id, payload.page).then(res => {
         context.commit(types.GET_NEW_COMMENT_BY_ID_AND_PAGE, { id: payload.id, page: payload.page, list: res.comments });

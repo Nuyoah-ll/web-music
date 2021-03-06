@@ -51,7 +51,6 @@ export default {
       this.isShow = bool;
     },
     playAlbum(id) {
-      console.log("发送album的actions")
       this.$store.dispatch(types.GET_ALBUM_MUSIC_LIST_BY_ID_ACTION, { id });
     },
   },

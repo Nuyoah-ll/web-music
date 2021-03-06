@@ -2,8 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from "./router"
 import store from "./store"
-import ElementUI from "element-ui";
-import 'element-ui/lib/theme-chalk/index.css';
 import VueLazyLoad from "vue-lazyload";
 
 import api from "./network/api";
@@ -13,7 +11,6 @@ Vue.filter("getTargetSize", function (url, size) {
   return `${url}?param=${size}y${size}`;
 })
 
-Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 

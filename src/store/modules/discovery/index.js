@@ -40,7 +40,6 @@ const discoveryModule = {
             context.commit(types.GET_CLOUD_NEW_MUSIC_RANKING, res.playlist);
             break;
           case 2:
-            console.log("111111111111111111111111111111111111111111111-----------------------------------------")
             context.commit(types.GET_ORIGINAL_MUSIC_RANKING, res.playlist);
             break;
           default:

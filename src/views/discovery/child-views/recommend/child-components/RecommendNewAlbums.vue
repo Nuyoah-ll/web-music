@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import { Carousel, CarouselItem } from "element-ui";
 import CommonNavbar from "components/content/common-navbar/CommonNavbar";
 import MusicDisplayFrame2 from "components/content/music-display-frame1/MusicDisplayFrame2";
 import { mapGetters } from "vuex";
@@ -47,6 +48,8 @@ export default {
   components: {
     CommonNavbar,
     MusicDisplayFrame2,
+    elCarousel: Carousel,
+    elCarouselItem: CarouselItem,
   },
   computed: {
     ...mapGetters(["newAlbum"]),

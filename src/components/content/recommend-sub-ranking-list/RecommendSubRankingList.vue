@@ -63,7 +63,6 @@ export default {
       this.showIndex = -1;
     },
     playThisMusic(id) {
-      console.log(id,"????")
       this.$store.dispatch(types.GET_SINGLE_MUSIC_BY_ID_ACTION, { id });
     },
   },

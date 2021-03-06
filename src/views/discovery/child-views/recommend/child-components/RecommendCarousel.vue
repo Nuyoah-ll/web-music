@@ -11,7 +11,11 @@
             ref="caroucel"
             @change="changeCurrentIndex"
           >
-            <el-carousel-item v-for="item in banners" :key="item.scm" @click.native="toSongDetail(item.targetId)">
+            <el-carousel-item
+              v-for="item in banners"
+              :key="item.scm"
+              @click.native="toSongDetail(item.targetId)"
+            >
               <img :src="item.imageUrl" class="banner-images" />
             </el-carousel-item>
           </el-carousel>
@@ -27,6 +31,7 @@
 </template>
 
 <script>
+import { Carousel, CarouselItem } from "element-ui";
 export default {
   name: "RecommendCarousel",
   props: {
@@ -40,7 +45,10 @@ export default {
       currentIndex: 0,
     };
   },
-  components: {},
+  components: {
+    elCarousel: Carousel,
+    elCarouselItem: CarouselItem,
+  },
   computed: {
     blurImageUrl() {
       const url =
@@ -59,12 +67,12 @@ export default {
     toNext() {
       this.$refs.caroucel.next();
     },
-    toDownloadPage(){
+    toDownloadPage() {
       this.$router.push("/download");
     },
-    toSongDetail(id){
+    toSongDetail(id) {
       this.$router.push(`/song?id=${id}`);
-    }
+    },
   },
 };
 </script>
@@ -122,8 +130,8 @@ export default {
           background-position: 0 -289px;
         }
       }
-      .download-text{
-        color:#8d8d8d;
+      .download-text {
+        color: #8d8d8d;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
