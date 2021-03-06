@@ -1,0 +1,109 @@
+@import "./normalize.css";
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap, .wrap2, .wrap3, .wrap4, .wrap5, .wrap6 {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1100px;
+}
+
+.wrap2 {
+  width: 730px;
+}
+
+.wrap3 {
+  width: 984px;
+}
+
+.wrap4 {
+  width: 254px;
+}
+
+/* 歌曲、歌单、专辑页面左右宽度 */
+
+.wrap5 {
+  width: 709px;
+  padding: 40px;
+}
+
+.wrap6 {
+  width: 207px;
+  padding: 30px;
+  border-left: 1px solid rgb(216, 216, 216);
+}
+
+/* 大背景的颜色 */
+
+.bg {
+  background-color: #f5f5f5;
+}
+
+.wrap5, .wrap6 {
+  background-color: #fff;
+}
+
+.sprite_01 {
+  background: url("../img/sprite_01.png") -9999px -9999px;
+}
+
+.sprite_02 {
+  background: url("../img/sprite_02.png") -9999px -9999px;
+}
+
+.banner_sprite {
+  background: url("../img/banner_sprite.png") -9999px -9999px;
+}
+
+.sprite_footer_01 {
+  background: url(../img/sprite_footer_01.png) -9999px -9999px;
+}
+
+.sprite_footer_02 {
+  background: url(../img/sprite_footer_02.png) -9999px -9999px;
+}
+
+.sprite_cover {
+  background: url(../img/sprite_cover.png) -9999px -9999px;
+}
+
+.sprite_icon {
+  background: url(../img/sprite_icon.png) -9999px -9999px;
+}
+
+.sprite_icon2 {
+  background: url(../img/sprite_icon2.png) -9999px -9999px;
+}
+
+.sprite_button {
+  background: url(../img/sprite_button.png) -9999px -9999px;
+}
+
+.sprite_table {
+  background: url(../img/sprite_table.png) -9999px -9999px;
+}
+
+.playbar_sprite {
+  background: url(../img/playbar_sprite.png) -9999px -9999px;
+}
+
+.progress-bar {
+  background: url(../img/progress_bar.png) -9999px -9999px;
+}
+
+.download-icon {
+  background: url("../img/download/download-icon.png") -9999px -9999px;
+}
+
+body, html {
+  font-size: 12px;
+}
+
+body {
+  overflow-y: scroll;
+}

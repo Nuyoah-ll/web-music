@@ -1,0 +1,88 @@
+#music-other-control-icon {
+  display: flex;
+  align-items: center;
+  & > * {
+    height: 100%;
+  }
+  .line {
+    width: 1px;
+    height: 100%;
+    background-position: -149px -238px;
+  }
+  .music-share {
+    width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    span {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    .collect {
+      background-position: -92px -166px;
+      &:hover {
+        background-position: -92px -192px;
+      }
+    }
+    .share {
+      background-position: -118px -166px;
+      &:hover {
+        background-position: -118px -192px;
+      }
+    }
+  }
+  .list-ctr {
+    width: 126px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    span {
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      &:last-child {
+        width: 59px;
+      }
+    }
+    .volume {
+      background-position: -1px -249px;
+      &:hover {
+        background-position: -30px -249px;
+      }
+    }
+    .mode {
+      &.random{
+        background-position: -67px -249px;
+        &:hover {
+          background-position: -94px -249px;
+        }
+      }
+      &.listloop{
+        background-position: -4px -344px;
+        &:hover {
+          background-position: -34px -344px;
+        }
+      }
+      &.loop{
+        background-position: -67px -344px;
+        &:hover {
+          background-position: -94px -344px;
+        }
+      }
+    }
+    .list {
+      position: relative;
+      background-position: -45px -70px;
+      &:hover {
+        background-position: -45px -100px;
+      }
+      span{
+        color: #666;
+        position: absolute;
+        top: 4px;
+        left: 30px;
+      }
+    }
+  }
+}
